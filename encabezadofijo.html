@@ -1,0 +1,124 @@
+<encabezadofijo.html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicio</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="widht=device-widht, initial-scale=1">
+	<link rel="stylesheet" href="ENCABEZADOFIJO.css">
+    <script type="text/JavaScript">
+<!--
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+    <style type="text/css">
+<!--
+.style2 {color: white}
+-->
+    </style>
+</head>
+<body bgcolor="#000000" onLoad="MM_preloadImages('MODELO 2/BOTON MODELO 2_s3.gif','MODELO 2/BOTON MODELO 2_s2.gif','../BOTONES MODELO/DEMAS/MODELO.1_s3.gif','../BOTONES MODELO/DEMAS/MODELO.1_s2.gif','../BOTONES MODELO/DEMAS/MODELO.2_s3.gif','../BOTONES MODELO/DEMAS/MODELO.2_s2.gif','../BOTONES MODELO/DEMAS/MODELO.3_s3.gif','../BOTONES MODELO/DEMAS/MODELO.3_s2.gif','../BOTONES MODELO/DEMAS/Hombre.1_s3.gif','../BOTONES MODELO/DEMAS/Hombre.1_s2.gif','../BOTONES MODELO/DEMAS/HOMBRE.2_s3.gif','../BOTONES MODELO/DEMAS/HOMBRE.2_s2.gif','../BOTONES MODELO/DEMAS/HOMBRE.3_s3.gif','../BOTONES MODELO/DEMAS/HOMBRE.3_s2.gif','../BOTONES MODELO/DEMAS/MUJER.1_s3.gif','../BOTONES MODELO/DEMAS/MUJER.1_s2.gif','../BOTONES MODELO/DEMAS/MUJER.2_s3.gif','../BOTONES MODELO/DEMAS/MUJER.2_s2.gif','../BOTONES MODELO/DEMAS/MUJER.3_s3.gif','../BOTONES MODELO/DEMAS/MUJER.3_s2.gif')">
+	
+<header class="header">
+  <div class="container logo-nav-container">
+		<img src="../IMAGENES/NEW CLOTHES LOGO.png" width="530" height="87" class="LOGO">
+		<nav class="navigation">
+			<ul>
+			<li><a href="encabezadofijo.html">Inicio</a></li>
+			<li><a href="servicios.html">Servicios</a></li>
+			<li> <a href="ropa.html">Ropa</a></li>
+			<li><a href="contactenos.html">Contactenos</a></li>
+			<li><a href="presa.html">Empresa</a></li>
+		    </ul>
+		</nav>
+		<br>
+  </div>
+</header>
+<center>
+<main class="main">
+	<div class="container"></div>
+	<h1><img src="../IMAGENES/diseños.jpg" width="360" height="106"></h1>
+	<table width="900" border="0">
+      <tr>
+        <td width="312"><a href="hombre.html" target="_top" onClick="MM_nbGroup('down','navbar1','MODELO1','../BOTONES MODELO/DEMAS/MODELO.1_s3.gif',1);" onMouseOver="MM_nbGroup('over','MODELO1','../BOTONES MODELO/DEMAS/MODELO.1_s2.gif','../BOTONES MODELO/DEMAS/MODELO.1_s3.gif',1);" onMouseOut="MM_nbGroup('out');"><img src="../BOTONES MODELO/DEMAS/MODELO.1.gif" alt="" name="MODELO1" width="300" height="271" border="0" id="MODELO1" /></a></td>
+        <td width="303"><a href="mujer.html" target="_top" onClick="MM_nbGroup('down','navbar1','MODELO2','../BOTONES MODELO/DEMAS/MODELO.2_s3.gif',1);" onMouseOver="MM_nbGroup('over','MODELO2','../BOTONES MODELO/DEMAS/MODELO.2_s2.gif','../BOTONES MODELO/DEMAS/MODELO.2_s3.gif',1);" onMouseOut="MM_nbGroup('out');"><img src="../BOTONES MODELO/DEMAS/MODELO.2.gif" alt="" name="MODELO2" width="300" height="270" border="0" id="MODELO2" /></a></td>
+        <td width="263"><a href="ropa.html" target="_top" onClick="MM_nbGroup('down','navbar1','MODELO3','../BOTONES MODELO/DEMAS/MODELO.3_s3.gif',1);" onMouseOver="MM_nbGroup('over','MODELO3','../BOTONES MODELO/DEMAS/MODELO.3_s2.gif','../BOTONES MODELO/DEMAS/MODELO.3_s3.gif',1);" onMouseOut="MM_nbGroup('out');"><img src="../BOTONES MODELO/DEMAS/MODELO.3.gif" alt="" name="MODELO3" width="525" height="270" border="0" id="MODELO3" /></a></td>
+      </tr>
+    </table>
+	<p><img src="../IMAGENES/hombre.gif" width="431" height="61"></p>
+	<table width="1139" border="0">
+      <tr>
+        <td width="300" height="182"><a href="hombre.html" target="_top" onClick="MM_nbGroup('down','navbar1','Hombre1','../BOTONES MODELO/DEMAS/Hombre.1_s3.gif',1);" onMouseOver="MM_nbGroup('over','Hombre1','../BOTONES MODELO/DEMAS/Hombre.1_s2.gif','../BOTONES MODELO/DEMAS/Hombre.1_s3.gif',1);" onMouseOut="MM_nbGroup('out');"><img src="../BOTONES MODELO/DEMAS/Hombre.1.gif" alt="" name="Hombre1" width="300" height="503" border="0" id="Hombre1" /></a></td>
+        <td width="300"><a href="hombre.html" target="_top" onClick="MM_nbGroup('down','navbar1','HOMBRE2','../BOTONES MODELO/DEMAS/HOMBRE.2_s3.gif',1);" onMouseOver="MM_nbGroup('over','HOMBRE2','../BOTONES MODELO/DEMAS/HOMBRE.2_s2.gif','../BOTONES MODELO/DEMAS/HOMBRE.2_s3.gif',1);" onMouseOut="MM_nbGroup('out');"><img src="../BOTONES MODELO/DEMAS/HOMBRE.2.gif" alt="" name="HOMBRE2" width="300" height="503" border="0" id="HOMBRE2" /></a></td>
+        <td width="300"><a href="hombre.html" target="_top" onClick="MM_nbGroup('down','navbar1','HOMBRE3','../BOTONES MODELO/DEMAS/HOMBRE.3_s3.gif',1);" onMouseOver="MM_nbGroup('over','HOMBRE3','../BOTONES MODELO/DEMAS/HOMBRE.3_s2.gif','../BOTONES MODELO/DEMAS/HOMBRE.3_s3.gif',1);" onMouseOut="MM_nbGroup('out');"><img src="../BOTONES MODELO/DEMAS/HOMBRE.3.gif" alt="" name="HOMBRE3" width="300" height="503" border="0" id="HOMBRE3" /></a></td>
+        <td width="211"><a href="hombre.html"><img src="../IMAGENES/MAS.gif" width="213" height="503" border="0"></a></td>
+      </tr>
+      <tr>
+        <td height="49" colspan="4"><div align="center"><img src="../IMAGENES/mujeres.gif" width="431" height="61"></div></td>
+      </tr>
+      <tr>
+        <td height="70"><a href="mujer.html" target="_top" onClick="MM_nbGroup('down','navbar1','MUJER1','../BOTONES MODELO/DEMAS/MUJER.1_s3.gif',1);" onMouseOver="MM_nbGroup('over','MUJER1','../BOTONES MODELO/DEMAS/MUJER.1_s2.gif','../BOTONES MODELO/DEMAS/MUJER.1_s3.gif',1);" onMouseOut="MM_nbGroup('out');"><img src="../BOTONES MODELO/DEMAS/MUJER.1.gif" alt="" name="MUJER1" width="302" height="504" border="0" id="MUJER1" /></a></td>
+        <td><a href="mujer.html" target="_top" onClick="MM_nbGroup('down','navbar1','MUJER2','../BOTONES MODELO/DEMAS/MUJER.2_s3.gif',1);" onMouseOver="MM_nbGroup('over','MUJER2','../BOTONES MODELO/DEMAS/MUJER.2_s2.gif','../BOTONES MODELO/DEMAS/MUJER.2_s3.gif',1);" onMouseOut="MM_nbGroup('out');"><img src="../BOTONES MODELO/DEMAS/MUJER.2.gif" alt="" name="MUJER2" width="300" height="503" border="0" id="MUJER2" /></a></td>
+        <td><a href="mujer.html" target="_top" onClick="MM_nbGroup('down','navbar1','MUJER3','../BOTONES MODELO/DEMAS/MUJER.3_s3.gif',1);" onMouseOver="MM_nbGroup('over','MUJER3','../BOTONES MODELO/DEMAS/MUJER.3_s2.gif','../BOTONES MODELO/DEMAS/MUJER.3_s3.gif',1);" onMouseOut="MM_nbGroup('out');"><img src="../BOTONES MODELO/DEMAS/MUJER.3.gif" alt="" name="MUJER3" width="300" height="491" border="0" id="MUJER3" /></a></td>
+        <td><a href="mujer.html"><img src="../IMAGENES/MAS.gif" alt="H" width="213" height="503" border="0"></a></td>
+      </tr>
+    </table>
+	<p>
+	  <footer class="footer" ><img src="../IMAGENES/pie de pagina.jpg"></footer>
+	</p>
+	<div class="container"></div>
+	<p><a href="https://api.whatsapp.com/send?phone=3017359255">Envíanos un mensaje de WhatsApp</a></p>
+</main>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</center>
+</body>
+</html>
